@@ -1,0 +1,72 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+- Bubble Sort is an inefficient algorithm for large lists, especially for random or reversed data, because it has a time complexity of 𝑂(n^2)
+- However, Bubble Sort performs much faster on sorted data since it can complete in a single pass without many swaps.
+- The fact that Sort1 took less time on sorted elements compared to random elements suggests Bubble Sort, which quickly recognizes an already-sorted list.
+
+sort2 uses: Merge Sort
+
+How do you know?:
+- Merge Sort is a more efficient algorithm with a time complexity of O(nlogn), which means it performs well on all types of data (sorted, random, or reversed).
+- Sort2 took the least time overall, regardless of the initial order of the data, which aligns with the characteristics of Merge Sort.
+- This consistency suggests that Sort2 uses Merge Sort.
+
+sort3 uses: Selection Sort
+
+How do you know?:
+- Selection Sort has a time complexity of 𝑂(n^2), which means it does not benefit from already sorted or partially sorted data.
+- The observation that Sort3 took about the same amount of time on both sorted and random data suggests Selection Sort
+  as it goes through the entire list to find the smallest remaining element in each pass, regardless of initial order.
+
+
+ 
+
+for reversed files:
+sort1 - 10000
+real    0m0.334s
+user    0m0.191s
+sys     0m0.066s
+
+sort2 - 10000
+real    0m0.060s
+user    0m0.000s
+sys     0m0.053s
+
+sort3 - 10000
+real    0m0.255s
+user    0m0.086s
+sys     0m0.076s
+
+
+sort3 - 50000
+real    0m2.540s
+user    0m1.982s
+sys     0m0.295s
+
+sort2 - 50000
+real    0m0.591s
+user    0m0.027s
+sys     0m0.268s
+
+
+sort1 - 50000 (reversed)
+real    0m4.900s
+user    0m4.429s
+sys     0m0.248s
+
+
+sort1 - 50000 (random)
+real    0m5.762s
+user    0m5.135s
+sys     0m0.290s
+
+sort2 - 50000 (random)
+real    0m0.427s
+user    0m0.038s
+sys     0m0.234s
+
+sort3 - 50000 (random)
+real    0m2.383s
+user    0m1.738s
+sys     0m0.276s
